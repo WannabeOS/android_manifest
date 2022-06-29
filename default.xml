@@ -1129,8 +1129,8 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- ArrowOS changes -->
+  <!-- WannabeOS changes -->
   <include name="remove.xml" />
-  <include name="arrow.xml" />
+  <include name="wannabe.xml" />
 
 </manifest>

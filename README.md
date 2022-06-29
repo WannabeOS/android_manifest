@@ -1,62 +1,51 @@
-<img src="https://github.com/ArrowOS/getting_started/blob/master/misc/logo.png?raw=true">
+# WannabeOS
 
-# ArrowOS
+### Create a directory for the source files
+* You can name this directory however you want, just remember to replace 
+* This can be located anywhere (as long as the fs is case-sensitive)
 
- Getting Started
----------------
-To get started with the ArrowOS sources, you'll need to get
-familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
-
-To initialize your local repository, use command:
-
-```bash
-repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-12.1
+```bash 
+mkdir wannabe 
+cd wannabe
 ```
 
-Then sync up:
+### Install Repo in the created directory
+
+>> [Hint: This might take a long time]
 
 ```bash
-repo sync
+repo init -u https://github.com/WannabeOS/android_manifest -b emptiness
 ```
 
-Building the System
--------------------
- Initialize the ROM environment with the envsetup.sh script.
+>> [Hint: Want to save some space ? Then use this]
 
 ```bash
+repo init --depth=1 -u https://github.com/WannabeOS/android_manifest -b emptiness
+```
+
+### Download the source
+```bash 
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch
+```
+
+### Get all required packages (if this is your first time building any rom)
+```bash
+# Clone akhilnarang awesome repo
+git clone https://github.com/akhilnarang/scripts scripts
+# Get all the packages you need
+bash scripts/setup/android_build_env.sh
+```
+
+### Build
+```bash
+# Set up environment
 . build/envsetup.sh
+# Choose a target
+lunch wannabe_<device>-userdebug
+# Build the code
+make bacon -jX
 ```
 
-Lunch your device after cloning all device sources if needed.
-
-```bash
-lunch arrow_devicecodename-buildtype
-```
-
-Start compilation
-
-```bash
-m otapackage
-```
-
-OR
-
-```bash
-m bacon
-```	 
-
-**You can also refer to our detailed guides as listed below:**
-
-[How to compile ArrowOS from source](https://blog.arrowos.net/posts/compilation-guide)
-
-[How to submit patches to ArrowOS Gerrit](https://blog.arrowos.net/how-to-submit-patches-to-arrowos-gerrit)
-
-[Apply for Maintainership](https://blog.arrowos.net/posts/apply-for-maintainership) OR [Submit device for community builds](https://blog.arrowos.net/introducing-community-builds)
-
-To check thread template refer [**HERE**](https://raw.githubusercontent.com/ArrowOS/documentation/master/thread_template.txt)
-
----------------------------------------------------------------------------------------------------------------------
-
-[ArrowOS Website](https://www.arrowos.net/) | [ArrowOS Blog](https://blog.arrowos.net/)
-
----------------------------------------------------------------------------------------------------------------------
+### Credits
+ * [**AOSP**](https://android.googlesource.com) 
+ * [**ArrowOS**](https://github.com/ArrowOS)
