@@ -27,7 +27,7 @@
   <project path="bootable/recovery" name="android_bootable_recovery" remote="arrow" />
 
   <!-- device repos -->
-  <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrow" />
+  <project path="device/wannabe/sepolicy" name="android_device_wannabe_sepolicy" remote="wannabe" />
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="arrow" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="arrow" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="arrow" />
@@ -118,7 +118,7 @@
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="arrow" />
   <project path="hardware/qcom/sdm845/display" name="android_hardware_qcom_sdm845_display" groups="generic_fs,qcom_sdm845" remote="arrow" />
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="arrow" />
-  <project path="hardware/arrow/interfaces" name="android_hardware_arrow_interfaces" remote="arrow" />
+  <project path="hardware/wannabe/interfaces" name="android_hardware_wannabe_interfaces" remote="wannabe" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="arrow" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="arrow" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="arrow" />
