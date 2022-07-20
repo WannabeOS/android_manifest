@@ -49,3 +49,8 @@ make bacon -jX
 ### Credits
  * [**AOSP**](https://android.googlesource.com) 
  * [**ArrowOS**](https://github.com/ArrowOS)
+ * [**CrystalOS**](https://github.com/CrystalOS-Temp)
+ * [**Syberia Project**](https://github.com/syberia-project)
+ * [**AospExtended**]( https://github.com/AospExtended)
+
+ 
