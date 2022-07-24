@@ -4,7 +4,13 @@
    <remote  name="wannabe"
             fetch="https://github.com/WannabeOS"
             revision="refs/heads/emptiness" />
+   
+   <remote  name="awaken"
+           revision="12"
+           fetch="https://gitlab.com/Project-Awaken/" />
 
+   <!-- Wannabe Stuff -->
+  <project path="vendor/gms" name="android_vendor_gms" remote="awaken" clone-depth="1" revision="12.1" />
   <project path="manifest" name="android_manifest" remote="wannabe" />
   <project path="packages/apps/Somethinghub" name="android_packages_apps_Somethinghub" remote="wannabe" />
   <project path="device/qcom/qssi" name="device_qcom_qssi" remote="wannabe" />
