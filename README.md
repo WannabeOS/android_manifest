@@ -47,10 +47,12 @@ make bacon -jX
 ```
 
 ### Credits
- * [**AOSP**](https://android.googlesource.com) 
+ * [**AOSP**](https://android.googlesource.com)
+ * [**AospExtended**]( https://github.com/AospExtended)
  * [**ArrowOS**](https://github.com/ArrowOS)
+ * [**Awaken Project**](https://github.com/Project-Awaken)
  * [**CrystalOS**](https://github.com/CrystalOS-Temp)
  * [**Syberia Project**](https://github.com/syberia-project)
- * [**AospExtended**]( https://github.com/AospExtended)
+
 
  
